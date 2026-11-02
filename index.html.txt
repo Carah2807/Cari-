@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>A Little Universe Made Just for You, Cari ♡</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Opening Screen -->
+  <div id="opening-screen">
+    <div class="opening-content">
+      <div class="floating-petals"></div>
+      <h1 class="opening-title">A Little Universe<br>Made Just for You</h1>
+      <p class="opening-subtitle">Cari ♡</p>
+      <p class="opening-from">from Jai</p>
+      <button id="start-btn" class="romantic-btn">Open with care 💌</button>
+    </div>
+  </div>
+
+  <!-- Main Experience -->
+  <div id="main-experience" class="hidden">
+    <!-- Progress -->
+    <div class="progress-container">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <!-- Music Toggle -->
+    <button id="music-toggle" class="music-btn" title="Music (off by default)">
+      <span id="music-icon">🔇</span>
+    </button>
+
+    <!-- Slides Container -->
+    <div class="slides-wrapper">
+      <!-- SLIDE 1: Apology Letter -->
+      <section class="slide active" data-slide="1">
+        <div class="slide-inner letter-slide">
+          <div class="envelope-glow"></div>
+          <div class="letter-paper">
+            <div class="letter-header">
+              <span class="letter-date">From the bottom of my heart</span>
+            </div>
+            <div class="handwritten-letter">
+              <p>I want to tell you how I was feeling, and most importantly how sorry I am for thinking that. When we first started talking (after swapping our IDs on Litmatch) and then stopped talking for a while, I did message you again and you did seem a bit cold towards me. I didn’t really know how to feel so my brain went into overdrive and I made assumptions. I assumed you were just messing about, not really interested in anything real and maybe messing with my feelings. However when we started talking again, swapping reels and getting to know each other over the first few days I sometimes got those thoughts again. However when we had our video call and you became shy whilst kissing me and Andrea was joking with you I really felt happy. I felt relieved as I saw another side to you and realised my assumptions were completely unfair. Knowing you hadn’t been through anything like that before, you keeping me posted and showing me little ways you were including me in your day made me feel so much more relaxed, excited and comfortable around you.</p>
+              
+              <p>I want you to know where these thoughts came from but they don’t make any sense. I’ve seen certain things around me and on social media which made me become scared that girls from different cities/backgrounds wouldn’t genuinely be interested in someone like me. Someone who isn’t very attractive, isn’t wealthy and can act quite childish, clingy and overly emotional. I’ve seen situations where guys like me get messed about and treated like a one off. So I became scared that this would happen to me. I didn’t want to fall in love, trust someone and then get left. I was overthinking and letting my fears get to me.</p>
+              
+              <p>Honestly I’m so, so sorry. Sorry for thinking you were messing with my feelings, making assumptions about you and letting stereotypes and my insecurities get to me. You didn’t deserve to be viewed like that and I hadn’t even given myself enough time to get to know you. I hate that my thoughts may have made you feel judged, misunderstood and that I couldn’t see your real side. I never wanted to make you feel that way. You deserved to be patient, trusting and understood. You shouldn’t have to prove that you’re genuine or different to anyone. Which is something I should have known. I’m still learning to cope with my fears and not letting them impact someone I care about. I can’t take back what I said/thought but I’m genuinely sorry. I want to know you for YOU. Without any assumptions, comparisons or fears. You deserve that from me. 🤍</p>
+              
+              <p class="letter-closing">Thank you for letting me know the real you, Cari. I'm sorry, and I want to do better. 🤍</p>
+            </div>
+          </div>
+          <button class="next-btn romantic-btn" data-next="2">There's something else I want you to know ♡</button>
+        </div>
+      </section>
+
+      <!-- SLIDE 2: Through My Eyes -->
+      <section class="slide" data-slide="2">
+        <div class="slide-inner">
+          <div class="butterflies"></div>
+          <h2 class="slide-title">Cari, I wish you could see yourself the way I see you.</h2>
+          <div class="content-card soft-glow">
+            <p>Your worth has never been determined by how you look on any given day.</p>
+            <p>I see your beautiful bubbly personality that lights up conversations. I see your chaotic and playful energy that makes ordinary moments feel alive. I see those dramatic reactions and the way you type “HAHAHAHAHA” like the laughter is overflowing. I see your cute teasing and the little annoying jokes that somehow make me smile every time. I see those sweet “hihi” messages that feel like soft pats on the heart. I see your affectionate nature and the way you comfort people. I see how kind you are toward Andrea. I see your thoughtfulness, your emotional openness, and even the little insecurities and imperfections that make you human and real.</p>
+            <p>You don’t need to look perfect to deserve affection. Even on the days when you don’t feel pretty, you still deserve to feel beautiful, appreciated, and loved.</p>
+            <p class="highlight-line">If I could give you one thing in this world, it would be the ability to see yourself through my eyes, even for just a moment. Maybe then you’d understand why I find so many little things about you beautiful.</p>
+          </div>
+          <div class="nav-row">
+            <button class="prev-btn" data-prev="1">← Back</button>
+            <button class="next-btn romantic-btn" data-next="3">Continue ♡</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 3: Little Things Scrapbook -->
+      <section class="slide" data-slide="3">
+        <div class="slide-inner">
+          <h2 class="slide-title">I notice the little things, Cari.</h2>
+          <p class="slide-subtitle">Every small detail feels like a tiny treasure.</p>
+          <div class="scrapbook-grid" id="scrapbook">
+            <!-- Cards will be injected by JS -->
+          </div>
+          <div class="nav-row">
+            <button class="prev-btn" data-prev="2">← Back</button>
+            <button class="next-btn romantic-btn" data-next="4">Our little moments →</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 4: Timeline -->
+      <section class="slide" data-slide="4">
+        <div class="slide-inner">
+          <h2 class="slide-title">Little moments I want to keep close to my heart.</h2>
+          <p class="slide-subtitle">Sometimes, the smallest moments become the memories we smile about the most.</p>
+          <div class="timeline" id="timeline">
+            <!-- Polaroids injected by JS -->
+          </div>
+          <div class="nav-row">
+            <button class="prev-btn" data-prev="3">← Back</button>
+            <button class="next-btn romantic-btn" data-next="5">What I actually feel →</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 5: What I Feel -->
+      <section class="slide" data-slide="5">
+        <div class="slide-inner">
+          <h2 class="slide-title">Let me tell you something from the bottom of my heart.</h2>
+          <div class="content-card soft-glow">
+            <p>I don’t want to play with your feelings. I’m not talking to you just because I’m bored or because I need temporary attention. I genuinely want to know you, understand you, appreciate you, and discover more about who you are.</p>
+            <p>I am serious about my intentions. I want to experience proper courtship with you, understand what panliligaw means to you, and make you feel respected throughout the process. I don’t expect everything to happen immediately. I understand that you don’t want to rush things. I want to earn your trust through my behaviour, not simply through romantic paragraphs.</p>
+            <p>I don’t just want to know the happy, bubbly and playful Carah. I want to understand the quiet Carah, the overthinking Carah, the insecure Carah, the tired Carah and even the days when you don’t feel like talking much. You don’t have to pretend to be happy every second around me.</p>
+            <p>You can communicate honestly, establish boundaries, and take your time. I’m not looking for a perfect girl. I’m interested in the real you, with all your little habits, feelings, dreams, imperfections and beautiful differences.</p>
+          </div>
+          <div class="nav-row">
+            <button class="prev-btn" data-prev="4">← Back</button>
+            <button class="next-btn romantic-btn" data-next="6">My promises →</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 6: Promises -->
+      <section class="slide" data-slide="6">
+        <div class="slide-inner">
+          <h2 class="slide-title">Things I genuinely want to promise you.</h2>
+          <div class="promises-grid" id="promises">
+            <!-- Cards injected by JS -->
+          </div>
+          <p class="promise-note">I know promises are easy to write. What matters is whether I can show them through my actions. That’s what I want to work towards.</p>
+          <div class="nav-row">
+            <button class="prev-btn" data-prev="5">← Back</button>
+            <button class="next-btn romantic-btn" data-next="7">Our little universe →</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 7: Night Sky -->
+      <section class="slide night-sky-slide" data-slide="7">
+        <div class="slide-inner">
+          <h2 class="slide-title light">Somewhere in this enormous universe,<br>there’s a little place filled with my thoughts of you.</h2>
+          <div class="night-sky" id="night-sky">
+            <div class="moon"></div>
+            <div class="stars-container" id="stars-container"></div>
+          </div>
+          <p class="sky-hint">Tap the glowing stars ✨</p>
+          <div class="nav-row">
+            <button class="prev-btn light" data-prev="6">← Back</button>
+            <button class="next-btn romantic-btn" data-next="8">There's one last letter waiting for you ♡</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 8: Soul Letter -->
+      <section class="slide" data-slide="8">
+        <div class="slide-inner">
+          <h2 class="slide-title">If I could tell you everything in one letter...</h2>
+          <div class="content-card soft-glow soul-letter">
+            <p>Cari,</p>
+            <p>You have become someone special to me. I love your playful personality. I appreciate your affection. I love getting to know you and I want to understand your world. I am serious about you. I don’t want to rush you. I want to build trust. I hope we get to create beautiful memories together. I want to become someone whose presence feels safe and comforting to you.</p>
+            <p>Cari, I don’t know exactly what the future holds for us, but I know that my feelings right now are genuine. I’m not writing these words to get something from you. I’m writing them because I want you to know how much you mean to me.</p>
+            <p>I want to learn how to love you in the ways that make you feel appreciated, respected and understood. Not just through words, but through patience, effort and consistency.</p>
+            <p class="highlight-line">I really, really love you, Carah. And I’m serious about what I’m feeling. Every word comes from the bottom of my heart.</p>
+            <p class="letter-closing">Thank you for being you, Cari. Thank you for letting me know little pieces of your world. I’m really happy that our paths crossed. 🤍</p>
+          </div>
+          <div class="nav-row">
+            <button class="prev-btn" data-prev="7">← Back</button>
+            <button class="next-btn romantic-btn" data-next="9">One last thing... →</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 9: The Big I Love You -->
+      <section class="slide finale-slide" data-slide="9">
+        <div class="slide-inner finale-inner">
+          <div class="finale-sky"></div>
+          <div class="petals-falling"></div>
+          <div class="finale-messages" id="finale-messages">
+            <p class="finale-line" data-delay="0">Before you leave...</p>
+            <p class="finale-line" data-delay="1800">There’s something I’ve wanted to say...</p>
+            <p class="finale-line" data-delay="3600">Something that comes straight from my heart...</p>
+            <p class="finale-line" data-delay="5400">Something I never want you to doubt...</p>
+          </div>
+          <div class="big-love hidden" id="big-love">
+            <h1 class="iloveyou">I LOVE YOU, CARAH. ♡</h1>
+            <p class="really">I REALLY, REALLY LOVE YOU, CARI.</p>
+            <p class="serious">I’m serious about you. I’m serious about my feelings. And I’m not saying this just to make you blush. I’m saying it because it’s genuinely what my heart feels.</p>
+            <p class="special">You’re special to me, Cari. More than I can properly explain in words.</p>
+            <div class="bouquet">🌷🌹💗✨</div>
+            <p class="signature">With all my heart,<br>Your Jai 🤍</p>
+            <button class="surprise-btn romantic-btn" id="final-surprise">Open one last little surprise 💌</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 10: Final Surprise -->
+      <section class="slide surprise-slide" data-slide="10">
+        <div class="slide-inner">
+          <div class="surprise-content">
+            <h2>HEY, MY CARI!!! HAHAHAHA 🤭🎀</h2>
+            <p>I hope this little universe made you smile, because every little part of it was created with you in mind.</p>
+            <p>Sending you the biggest virtual hug, a thousand kisses on your forehead and the prettiest bouquet of flowers.</p>
+            <p class="big-final">I LOVE YOUUUUU SO MUCHHHH. 🤍🌷</p>
+            <div class="hug-emoji">🫂💗</div>
+          </div>
+          <button class="prev-btn" data-prev="9">← Back to the love</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Floating decorations -->
+  <div class="global-petals" id="global-petals"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
